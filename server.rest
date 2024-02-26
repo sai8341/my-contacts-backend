@@ -1,0 +1,49 @@
+GET http://localhost:5001/api/contacts
+
+###
+
+POST http://localhost:5001/api/contacts
+Content-Type: application/json 
+
+{
+    "name": "Kumar",
+    "email": "kumar@gmail.com",
+    "mobileno": "9922114455"
+}
+
+###
+PUT http://localhost:5001/api/contacts/65db743e090a5d6a23c9bf07
+Content-Type: application/json
+
+{
+    "name": "Rabbit",
+    "email": "rabbit@gmail.com",
+    "mobileno": "9876543210"
+}
+
+###
+DELETE http://localhost:5001/api/contacts/10
+
+###
+POST http://localhost:5001/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Suraj",
+    "email": "suraj12@gmail.com",
+    "password": "suraj@123"
+}
+
+###
+POST http://localhost:5001/api/users/login
+Content-Type: application/json
+
+{
+    "username": "Suraj",
+    "email": "suraj12@gmail.com",
+    "password": "suraj@123" 
+}
+
+###
+GET http://localhost:5001/api/users/current
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiU3VyYWoiLCJwYXNzd29yZCI6IiQyYiQxMCRqcXZKcmlBU1cuOE0udXlDa2pXbjFPc3oxY3U0YW9xM3pOdnFPaS5WcjZaNHlrNEllck55MiJ9LCJpYXQiOjE3MDg5NzM1ODV9.SMZAnEot7jh7QyTa2BFcMOnXU5QyEs9WxpbTpT_K44A
